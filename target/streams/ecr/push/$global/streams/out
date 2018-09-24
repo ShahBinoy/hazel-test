@@ -1,7 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0mAWS account id: 317098396095[0m
-[0m[[0m[0mdebug[0m] [0m[0mExecuting (2.12): docker tag hazel-test:1.9-SNAPSHOT 317098396095.dkr.ecr.us-east-1.amazonaws.com/hazel-test:latest[0m
-[0m[[0m[0mdebug[0m] [0m[0mExecuting (2.12): docker push 317098396095.dkr.ecr.us-east-1.amazonaws.com/hazel-test:latest[0m
-[0m[[0m[0mdebug[0m] [0m[0mExecuting (2.12): docker tag hazel-test:1.9-SNAPSHOT 317098396095.dkr.ecr.us-east-1.amazonaws.com/hazel-test:1.9-SNAPSHOT[0m
-[0m[[0m[0mdebug[0m] [0m[0mExecuting (2.12): docker push 317098396095.dkr.ecr.us-east-1.amazonaws.com/hazel-test:1.9-SNAPSHOT[0m
-[0m[[0m[0mdebug[0m] [0m[0mExecuting (2.12): docker tag hazel-test:1.9-SNAPSHOT 317098396095.dkr.ecr.us-east-1.amazonaws.com/hazel-test:latest[0m
-[0m[[0m[0mdebug[0m] [0m[0mExecuting (2.12): docker push 317098396095.dkr.ecr.us-east-1.amazonaws.com/hazel-test:latest[0m
