@@ -1,0 +1,50 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t hazel-test:1.9-SNAPSHOT .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /home/shahb/workstation/workspace/arc-subscriptions-workspace/entdev/hazel-test/target/docker/stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  54.23MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/13 : FROM quay.io/washpost/arc-subs-java:latest-alpine[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 513ed43dcb7f[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/13 : RUN addgroup play[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> dd51baca0e6b[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/13 : RUN adduser -s /bin/bash -D -G play play[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 8bf9475d3d2f[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/13 : RUN echo 'play ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 4c90de15d2b6[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/13 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 667baa8cf812[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/13 : ADD opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 04a2ee040d1c[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/13 : RUN chown -R play:play .[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 1e2eb097d76d[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 1e2eb097d76d[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> c24ace62a107[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 8/13 : RUN chown -R play:play /opt/certs[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 77f292aa69bc[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 77f292aa69bc[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 939ebf6d3e70[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 9/13 : USER play[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in ec5a10590456[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container ec5a10590456[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 45ac329c9927[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 10/13 : ENV ENV_CONF=${DEPLOY_ENV:-prod}[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in fc6e5266db0b[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container fc6e5266db0b[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> ca8193a3fbb7[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 11/13 : RUN chmod +x /opt/docker/start.sh[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in b085ef377aa3[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container b085ef377aa3[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 3a28f7899a44[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 12/13 : ENTRYPOINT ["/bin/bash", "/opt/docker/start.sh"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in c2ee677a4a2c[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container c2ee677a4a2c[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 942bf7a5e526[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 13/13 : EXPOSE 9000[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 4bdca2f853ed[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 4bdca2f853ed[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 194564f55263[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built 194564f55263[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged hazel-test:1.9-SNAPSHOT[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image hazel-test:1.9-SNAPSHOT[0m

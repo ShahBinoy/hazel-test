@@ -1,0 +1,13 @@
+reload
+run
+reload
+run
+~run
+run
+~run
+ensimeConfig
+reload
+ensimeConfig
+;reload;clean;compile;ecr:push
+exit
+;reload;clean;compile;ecr:push
